@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <title>Age Calculator</title>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div
+      class="container-fluid px-0 d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="main-box d-flex justify-content-center align-items-center flex-column gap-3 w-100 h-100 py-5 position-relative"
+      >
+        <p class="text-center mb-0 fs-3 fw-bold text-uppercase">
+          Insert youre birth date :
+        </p>
+        <div
+          class="birth-date d-flex justify-content-center align-items-center flex-column flex-md-row gap-2"
+        >
+          <input
+            type="number"
+            name="day-inpt"
+            id="day-inpt"
+            placeholder="dd"
+            max="31"
+          />
+          <input
+            type="number"
+            name="month-inpt"
+            id="month-inpt"
+            placeholder="mm"
+            max="12"
+          />
+          <input
+            type="number"
+            name="year-inpt"
+            id="year-inpt"
+            placeholder="yyyy"
+            max="2024"
+          />
+        </div>
+        <button class="btn btn-primary p-3">Calculate my age</button>
+        <div class="age-box border border-2 px-3 py-1 fs-4 text-center d-none">
+          You're <span class="year fw-bold">XX</span> years old,
+          <span class="month fw-bold">XX</span> month &
+          <span class="days fw-bold">XX</span>
+          days
+        </div>
+
+        <!-- alert invalide date -->
+        <div
+          class="alert alert-warning position-absolute text-center w-50"
+          role="alert"
+        >
+          invalid date !
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

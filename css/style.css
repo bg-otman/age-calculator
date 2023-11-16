@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(124, 216, 144);
+  min-height: 80vh;
+}
+
+.container {
+  height: 50vh;
+  border: 1px solid green;
+}
+
+.main-box {
+  background-color: rgb(14, 185, 120);
+  color: white;
+  box-shadow: 2px 1px 10px 1px black;
+}
+.age-box {
+  max-width: 500px;
+}
+@media (max-width: 672px) {
+  .age-box {
+    max-width: 340px;
+  }
+}
+.birth-date input {
+  width: 150px;
+  text-align: center;
+}
+.birth-date input:focus {
+  outline: 1px solid rebeccapurple;
+}
+.year,
+.month,
+.days {
+  color: rgb(31, 28, 28);
+}
+
+.alert {
+  top: 0;
+  display: none;
+  opacity: 0;
+  animation: alert 3s ease-in-out;
+}
+@keyframes alert {
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    top: -30px;
+  }
+  100% {
+    opacity: 0;
+    top: -30px;
+  }
+}
